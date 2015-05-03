@@ -1,0 +1,47 @@
+﻿<Window x:Class="Microsoft.Samples.Kinect.SpeechBasics.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Speech Basics" Height="600" Width="640"
+        Loaded="WindowLoaded" Closing="WindowClosing">
+    <Window.Resources>
+        <SolidColorBrush x:Key="MediumGreyBrush" Color="#ff6e6e6e"/>
+        <SolidColorBrush x:Key="LightGreyBrush" Color="#ffd2d2d2"/>
+        <SolidColorBrush x:Key="KinectPurpleBrush" Color="#ff52318f"/>
+        <Style TargetType="{x:Type Image}">
+            <Setter Property="SnapsToDevicePixels" Value="True"/>
+        </Style>
+    </Window.Resources>
+
+    <Grid Margin="10 0 10 0">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="43*"/>
+            <ColumnDefinition Width="569*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="22*"/>
+            <RowDefinition Height="505*"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+        <DockPanel Grid.Row="0" Margin="0 0 0 20" Grid.ColumnSpan="2"/>
+        <Viewbox Grid.Row="1" Stretch="Uniform" Grid.ColumnSpan="2" Grid.RowSpan="2">
+
+            <Canvas Name="playArea"  Width="600" Height="400">
+                <ListBox x:Name="listBox_ports" Height="100" Canvas.Left="36" Canvas.Top="221" Width="100" FontSize="8"/>
+                <TextBlock Canvas.Left="36" TextWrapping="Wrap" Text="Choose Serial Port:" Canvas.Top="209" FontSize="8" FontWeight="Bold"/>
+                <Button x:Name="open_port_button" Content="Go" Canvas.Left="36" Canvas.Top="326" Width="100" Height="25" Click="open_port_button_Click"/>
+                <TextBlock x:Name="right_hand_angle_text" Canvas.Left="11" TextWrapping="Wrap" Canvas.Top="15"><Run Text="TextB"/><Run Text="lock"/></TextBlock>
+                <TextBlock Canvas.Left="11" TextWrapping="Wrap" Canvas.Top="55"><Run Text="TextB"/><Run Text="lock"/></TextBlock>
+                <TextBlock x:Name="left_hand_angle_text" Canvas.Left="91" TextWrapping="Wrap" Canvas.Top="15"><Run Text="TextB"/><Run Text="lock"/></TextBlock>
+                <TextBlock Canvas.Left="91" TextWrapping="Wrap" Canvas.Top="55"><Run Text="TextB"/><Run Text="lock"/></TextBlock>
+            </Canvas>
+        </Viewbox>
+        <StatusBar Grid.Row="3" Height="23" HorizontalAlignment="Stretch" Name="statusBar" VerticalAlignment="Bottom" Background="White" Foreground="{StaticResource MediumGreyBrush}" Grid.ColumnSpan="2" Grid.RowSpan="2">
+            <StatusBarItem Padding="0">
+                <TextBlock Name="statusBarText"></TextBlock>
+            </StatusBarItem>
+        </StatusBar>
+        <Image x:Name="Image" Grid.Column="1" HorizontalAlignment="Left" Height="484" Margin="140,10,0,0" Grid.Row="2" VerticalAlignment="Top" Width="395"/>
+    </Grid>
+</Window>

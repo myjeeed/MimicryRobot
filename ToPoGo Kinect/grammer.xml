@@ -1,0 +1,43 @@
+﻿<grammar version="1.0" xml:lang="en-US" root="rootRule" tag-format="semantics/1.0-literals" xmlns="http://www.w3.org/2001/06/grammar">
+  <rule id="rootRule">
+    <one-of>
+      <item>
+        <tag>SIT</tag>
+        <one-of>
+          <item>Sit</item>
+          <item>Sit Down</item>
+          <item>Down</item>
+          <item>Please sit down</item>
+        </one-of>
+      </item>
+      <item>
+        <tag>STAND</tag>
+        <one-of>
+          <item>Stand Up</item>
+          <item>Please Stand Up</item>
+          <item>Get Up</item>
+          <item>May the real slim shady please stand up</item>
+        </one-of>
+      </item>
+      <item>
+        <tag>HI</tag>
+        <one-of>
+          <item>Hello</item>
+          <item>Hey</item>
+          <item>Hi</item>
+        </one-of>
+      </item>
+      <item>
+        <tag>MOVE</tag>
+        <one-of>
+          <item> Move </item>
+          <item> Please move </item>
+          <item> Move forward </item>
+          <item> Shake your ass </item>
+          <item> Shake that ass </item>
+          <item> Please shake that ass </item>
+        </one-of>
+      </item>
+    </one-of>
+  </rule>
+</grammar>
