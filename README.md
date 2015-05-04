@@ -1,4 +1,8 @@
 # _Kinetic ToPoGo_
+
+Robot website: http://cmsc838f-s15.wikispaces.com/kinetic-topogo
+Youtube video: https://www.youtube.com/watch?v=IuHxXKFdOlw
+
 _Description: Control your robot, differently_
 The C# code tries to read the exact position of each joint using a Microsoft Kinect so that it could calculate and send our hands movements to the arduino.
 Commands are sent through a SerialPort communication between the computer that runs the C# program and the Arduino.
@@ -19,8 +23,7 @@ _Examples of common tasks_
 > e.g.
 > 
 > - Say "sit down": the robot would sit down and start mimicing your hand gestures
-> - Say "Hello": the robot would shake its body and hads
-> - Say "Follow": the robot tries to follow you
+> - Say "Follow": the robot tries to walk by following your body movements
+> - Say "Shake": the robot will shake its butt ┍㋛┛
 > - Say "Move": the robot moves in a random way
-
-## License
+> - Say "Crawl": the robot would simply crawl
