@@ -1,7 +1,7 @@
 # _Kinetic ToPoGo_
 
-Robot website: http://cmsc838f-s15.wikispaces.com/kinetic-topogo
-Youtube video: https://www.youtube.com/watch?v=IuHxXKFdOlw
+- Robot website: http://cmsc838f-s15.wikispaces.com/kinetic-topogo
+- Youtube video: https://www.youtube.com/watch?v=IuHxXKFdOlw
 
 _Description: Control your robot, differently_
 The C# code tries to read the exact position of each joint using a Microsoft Kinect so that it could calculate and send our hands movements to the arduino.
