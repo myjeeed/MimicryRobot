@@ -4,6 +4,7 @@
 - Youtube video: https://www.youtube.com/watch?v=IuHxXKFdOlw
 
 _Description: Control your robot, differently_
+
 The C# code tries to read the exact position of each joint using a Microsoft Kinect so that it could calculate and send our hands movements to the arduino.
 Commands are sent through a SerialPort communication between the computer that runs the C# program and the Arduino.
 The arduino code translates the commands received from its Serial Port into PWM analog voltages that would set the position of each servo motor.
