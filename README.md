@@ -1,4 +1,4 @@
-# _Kinetic ToPoGo_
+# _Mimicry Robot_
 
 - Robot website: http://cmsc838f-s15.wikispaces.com/kinetic-topogo
 - Youtube video: https://www.youtube.com/watch?v=IuHxXKFdOlw
